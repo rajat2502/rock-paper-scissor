@@ -4,23 +4,23 @@ var computer=0;
 
 function topaper(){
   a=1;
-  document.querySelectorAll("img")[1].setAttribute("src","images/left/1.jpg");
+  document.querySelectorAll("img")[1].setAttribute("src","images/left/1.png");
   comp();
 }
 function torock(){
   a=2;
-  document.querySelectorAll("img")[1].setAttribute("src","images/left/2.jpg");
+  document.querySelectorAll("img")[1].setAttribute("src","images/left/2.png");
   comp();
 }
 function toscissors(){
   a=3;
-  document.querySelectorAll("img")[1].setAttribute("src","images/left/3.jpg");
+  document.querySelectorAll("img")[1].setAttribute("src","images/left/3.png");
   comp();
 }
 
 function comp(){
   c = Math.floor((Math.random() * 3) + 1);
-  var imageadd="images/right/"+c+".jpg";
+  var imageadd="images/right/"+c+".png";
   document.querySelectorAll("img")[0].setAttribute("src",imageadd);
   decider();
 }
