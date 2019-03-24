@@ -51,7 +51,7 @@ function decider(){
 function scoreupdate(){
   document.getElementById("player").innerHTML= player;
   document.getElementById("computer").innerHTML= computer;
-  setTimeout("togif()",2000);
+  setTimeout("togif()",1000);
 }
 
 function togif(){
