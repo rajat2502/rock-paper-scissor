@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
-  <body>
+  <body onload="myFunc()">
+    <div class="" id="LOADING">
+
+    </div>
     <h1>Choose Rock,Paper Or Scissor</h1>
     <div class="">
       <span class="cscore">Computer = <span  id="computer">0</span></span>
@@ -29,6 +32,12 @@
       <button type="button" name="button" class="btn" id="scissors" onclick="toscissors()"> <img src="images\3.png" alt="" class="static">Scissor</button>
     </div>
 
+    <script type="text/javascript">
+      var preloader = document.getElementById("LOADING");
+      function myFunc(){
+        preloader.style.display = 'none';
+      }
+    </script>
     <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
